@@ -1,7 +1,7 @@
 /* Body */
 
 body {
-    background-color: #cccccc; /* grey light */
+    background-color: #cccc; /* grey light */
 }
 
 p {
@@ -21,7 +21,7 @@ h3 {
 }
 
 .button {
-    background-color: #33333; /* Green */
+    background-color: #3333;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -29,6 +29,60 @@ h3 {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+
+.buttonReservations {
+    background-color: rgba(209, 29, 29, 0.2);
+    border: none;
+    color: rgb(255, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.flexReservationsOne {
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.flexReservationsTwo {
+
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+}
+
+.flexReservationsThree {
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.flexReservationsTitle{
+
+    font-size: 24px;
+
+}
+
+.flexReservationsParagraph{
+
+    font-size: 16px;
+
+}
+
+.reservationsImgOne img{
+
+    width: 400px;
+    height: 240px;
+
 }
 
 /* Header */
