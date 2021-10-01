@@ -1,120 +1,51 @@
 <!DOCTYPE html>
 <html lang="fr">
-
     <head>
         <meta charset="utf-8">
-        <title>Devis & Contact</title>
+        <title>Formulaire responsive</title>
         <link rel="stylesheet" href="../css/style.css">
     </head>
-
 <body>
-    <form method="post" action="form.php">
-        <div>
-            <h1>Devis & Contact</h1>
-        </div>
-        <div class="champ">
-            <label for="name">Nom et Prénom :</label>
-            <input type="text" id="name" name="user_name">
-        </div>
-        <div class="champ">
-            <label for="name">Email :</label>
-            <input type="text" id="email" name="user_mail">
-        </div>
-        <div class="champ">
-            <label for="name">Téléphone :</label>
-            <input type="text" id="tel" name="user_tel">
-        </div>
-        <div class="champ">
-            <label for="name">Gamme de transport :</label>
-            <input type="text" id="gamme" name="user_gamme">
-        </div>
-        <div class="champ">
-            <label for="name">Date du transport :</label>
-            <input type="text" id="date" name="user_date">
-        </div>
-        <div class="champ">
-            <label for="name">Adresse de prise en charge :</label>
-            <input type="text" id="adresse1" name="user_adresse1">
-        </div>
-        <div class="champ">
-            <label for="name">Adresse de destination :</label>
-            <input type="text" id="adresse2" name="user_adresse2">
-        </div>
-        <div class="champ">
-            <label for="name">Nombre de personnes à bord :</label>
-            <div>
-                <div id="button1">
-                    <input type="checkbox" value="1" name="dmform-6">
-                    <span id="un">1</span>
+    <div class="container">
+        <div class="title">Devis & Contact</div>
+        <div class=class="content">
+            <form action="#">
+                <div class="user-details">
+                    <div class='input-box'>
+                        <span class="details">Nom / Prénom</span>
+                        <input type="text" placeholder="Enter your name" required>
+                    </div>
+                    <div class='input-box'>
+                        <span class="details">Adresse mail</span>
+                        <input type="text" placeholder="Enter your mail" required>
+                    </div>
+                    <div class='input-box'>
+                        <span class="details">Téléphone</span>
+                        <input type="text" placeholder="Enter your phone" required>
+                    </div>
+                    <div class='input-box'>
+                        <span class="details">Horaire de départ</span>
+                        <input type="text" placeholder="Enter your schedule" required>
+                    </div>
+                    <div class='input-box'>
+                        <span class="details">Adresse de prise en charge</span>
+                        <input type="text" placeholder="Enter your adress" required>
+                    </div>
+                    <div class='input-box'>
+                        <span class="details">Adresse de destination</span>
+                        <input type="text" placeholder="Enter your destination" required>
+                    </div>
                 </div>
-                <div id="button2">
-                    <input type="checkbox" value="2" name="dmform-6">
-                    <span id="un">2</span>
+                <div class="buttons">
+                    <input type="submit" value="Réserver">
                 </div>
-                <div id="button3">
-                    <input type="checkbox" value="3" name="dmform-6">
-                    <span id="un">3</span>
-                </div>
-                <div id="button4">
-                    <input type="checkbox" value="4" name="dmform-6">
-                    <span id="un">4</span>
-                </div>
-                <div id="button5">
-                    <input type="checkbox" value="5" name="dmform-6">
-                    <span id="un">5</span>
-                </div>
-                <div id="button6">
-                    <input type="checkbox" value="6" name="dmform-6">
-                    <span id="un">6</span>
-                </div>
-                <div id="button7">
-                    <input type="checkbox" value="7" name="dmform-6">
-                    <span id="un">Plus</span>
-                </div>
-            </div>
+            </form>
         </div>
-        <div class="siège">
-            <label for="name">Siège auto (enfant de 0 à 3 ans)</label>
-                <input type="checkbox" value="8" name="dmform-6">
-                <span id="un">Oui</span>
-                <input type="checkbox" value="9" name="dmform-6">
-                <span id="un">Non</span>      
-        </div>
-        <div class="siège">
-            <label for="name">Siège auto (enfant de 3 à 5 ans)</label>
-                <input type="checkbox" value="10" name="dmform-6">
-                <span id="un">Oui</span>
-                <input type="checkbox" value="11" name="dmform-6">
-                <span id="un">Non</span>      
-        </div>
-        <div class="siège">
-            <label for="name">Réhausseur (plus de 5 ans)</label>
-                <input type="checkbox" value="12" name="dmform-6">
-                <span id="un">Oui</span>
-                <input type="checkbox" value="13" name="dmform-6">
-                <span id="un">Non</span>      
-        </div>
-        <div class="champ">
-            <label for="name">Commentaires :</label>
-            <input type="text" id="commentaires" name="user_comm">
-        </div>
-        <div class="champ">
-            <label for="name">En cochant cette case, 
-            j'accepte de transmettre mes données personnelles 
-            uniquement à la société de VTC "VCAB33". 
-            Plus d'info dans la rubrique "Mentions Légales".</label>
-            <input type="radio" id="rgpd" name="user_rgpd">
-        </div>
-        <div class="devis">
-            <label for="name">Recevoir mon devis</label>
-            <input type="submit" id="mondevis" name="user_devis">
-        </div>
-    </form>
-
-
-
+    </div>
+    
 
 </body>
+
 
 
 </html>
