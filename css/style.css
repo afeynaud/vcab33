@@ -1,3 +1,8 @@
+/* Importations */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Oswald:wght@300;400;500;700&display=swap');
+
 /* Body */
 
 body {
@@ -6,22 +11,26 @@ body {
 
 p {
     font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 h1 {
     font-size: 42px;
+    font-family: 'Oswald', sans-serif;
 }
 
 h2 {
     font-size: 36px;
+    font-family: 'Oswald', sans-serif;
 }
 
 h3 {
     font-size: 24px;
+    font-family: 'Oswald', sans-serif;
 }
 
 .button {
-    background-color: #33333; /* Green */
+    background-color: #333333;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -32,11 +41,69 @@ h3 {
 }
 
 /* Header */
+.header {
+    margin-bottom: 10px;
+}
 
+.header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0;
+}
 
+.header ul li {
+    list-style: none;
+    font-family: 'Nunito Sans', sans-serif;
+}
 
 /* Nav */
+.nav-menu {
+    position: relative;
+}
 
+.nav-menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 0;
+    border-top: #000000 solid 2px;
+    border-bottom: #000000 solid 2px;
+}
+
+.nav-menu ul li {
+    list-style: none;
+    font-family: 'Nunito Sans', sans-serif;
+    vertical-align: middle;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.nav-menu ul li .logo-text {
+    list-style: none;
+    font-family: 'Nunito Sans', sans-serif;
+    vertical-align: middle;
+    font-size: 42px;
+    color: #ffffff;
+    position: relative;
+    top: 76px;
+    left: 21px;
+}
+
+.nav-menu .logo {
+    position:absolute;
+    height: 200px;
+    width: 200px;
+    top: -80px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    line-height:50px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 50%;
+    z-index: 1;
+}
 
 
 /* Slider */
