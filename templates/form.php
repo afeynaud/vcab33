@@ -1,7 +1,6 @@
-
+<h2>Devis & Contact</h2>
     <div class="container">
-        <div class="title">Devis & Contact</div>
-        <div class=class="content">
+        <div class='container'>
             <form action="#">
                 <div class="user-details">
 
@@ -26,13 +25,13 @@
                     </div>
 
                     <div class='input-box'>
-                        <label for="home-adress" class="details">Adresse de prise en charge</label>
-                        <input type="text" id="home-adress" placeholder="Enter your adress" required>
+                        <label for="home-address" class="details">Adresse de prise en charge</label>
+                        <input type="text" id="home-address" placeholder="Enter your address" required>
                     </div>
 
                     <div class='input-box'>
-                        <label for="destination-adress" class="details">Adresse de destination</label>
-                        <input type="text" id="destination-adress" placeholder="Enter your destination" required>
+                        <label for="destination-address" class="details">Adresse de destination</label>
+                        <input type="text" id="destination-address" placeholder="Enter your destination" required>
                     </div>
 
                 </div>
@@ -42,4 +41,3 @@
                 </div>
             </form>
         </div>
-    </div>

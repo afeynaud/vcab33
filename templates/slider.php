@@ -1,14 +1,32 @@
-<form>
-    <input type="radio" name="fancy" autofocus value="éco" id="éco" />
-    <input type="radio" name="fancy" value="vip" id="vip" />
-    <input type="radio" name="fancy" value="van" id="van" />			
-    <label for="éco"> Économique</label>
-<label for="vip"> V.I.P</label>
-<label for="van"> Van 8 places (Groupe)</label>
-<div class="keys">Utilisez les flèches gauche et droite pour naviguer.</div>
-<div class="image1">
-<img src="Talisman.jpg"
-alt="The eco model"
-width="400"
-height="250">
-</form>
+<section>
+    <div class='container'>
+    <div class='slider-slideshow-container'>
+        <div class='slider-my-slides fade'>
+            <div class='slider-number-text'>1 / 3</div>
+            <img src='../src/img/home/voiture-berline1.jpg' alt='voiture-berline' style='width:100%'>
+            <div class='slider-text'>Caption Text</div>
+        </div>
+
+        <div class='slider-my-slides fade'>
+            <div class='slider-number-text'>2 / 3</div>
+            <img src='../src/img/home/voiture-berline1.jpg' alt='voiture-berline' style='width:100%'>
+            <div class='slider-text'>Caption Two</div>
+        </div>
+
+        <div class='slider-my-slides fade'>
+            <div class='slider-number-text'>3 / 3</div>
+            <img src='../src/img/home/voiture-berline1.jpg' alt='voiture-berline' style='width:100%'>
+            <div class='slider-text'>Caption Three</div>
+        </div>
+        <a class='slider-prev' onclick='plusSlides(-1)'>&#10094;</a>
+        <a class='slider-next' onclick='plusSlides(1)'>&#10095;</a>
+    </div>
+    <br>
+
+    <div style='text-align:center'>
+        <span class='slider-dot' onclick='currentSlide(1)'></span>
+        <span class='slider-dot' onclick='currentSlide(2)'></span>
+        <span class='slider-dot' onclick='currentSlide(3)'></span>
+    </div>
+    </div>
+</section>

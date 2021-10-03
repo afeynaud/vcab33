@@ -5,8 +5,26 @@
 
 /* Body */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body {
     background-color: #cccccc; /* grey light */
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
 }
 
 p {
@@ -18,6 +36,7 @@ h1 {
     font-size: 42px;
 	text-align: center;
     font-family: 'Oswald', sans-serif;
+    margin-bottom: 50px;
 }
 
 h2 {
@@ -28,6 +47,10 @@ h2 {
 h3 {
     font-size: 24px;
     font-family: 'Oswald', sans-serif;
+}
+
+ul li {
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 .button {
@@ -51,53 +74,31 @@ h3 {
     display: inline-block;
     font-size: 16px;
 }
-
-.flexReservationsOne {
-
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-
+.flex-item-left {
+    flex: 50%;
 }
 
-.flexReservationsTwo {
-
-    display:flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-
-}
-
-.flexReservationsThree {
-
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-}
-
-.flexReservationsTitle{
-
-    font-size: 24px;
-
-}
-
-.flexReservationsParagraph{
-
-    font-size: 16px;
-
+.flex-item-right {
+    flex: 50%;
 }
 
 .reservationsImgOne img{
-
     width: 400px;
     height: 240px;
+}
 
+@media (max-width: 800px) {
+    .container .flex-item-right, .flex-item-left {
+        flex: 100%;
+        flex-direction: column;
+    }
 }
 
 /* Header */
 .header {
-    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing:border-box;
 }
 
 .header ul {
@@ -110,11 +111,14 @@ h3 {
 .header ul li {
     list-style: none;
     font-family: 'Nunito Sans', sans-serif;
+    height: 90px;
+    padding-top: 60px;
 }
 
 /* Nav */
 .nav-menu {
     position: relative;
+    margin-bottom: 120px;
 }
 
 .nav-menu ul {
@@ -156,28 +160,100 @@ h3 {
     background-color: #000000;
     color: #ffffff;
     border-radius: 50%;
-    z-index: 1;
 }
 
 
 /* Slider */
+.slider-my-slides {display: none}
 
+.slider-slideshow-container {
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+}
 
+.slider-prev, .slider-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
 
+.slider-next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.slider-prev:hover, .slider-next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.slider-text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.slider-number-text {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.slider-dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .slider-dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .slider-prev, .slider-next,.slider-text {font-size: 11px}
+}
 
 /* ContactForm */
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: 'Poppins',sans-serif;
-}
-
-
-
-
-body{
+.contact-form .body{
     display: flex;
     height: 100vh;
     justify-content: center;
@@ -186,7 +262,7 @@ body{
     padding: 10px;
 }
 
-.container{
+.contact-form .container{
     max-width: 700px;
     width: 100%;
     background: rgba(119, 153, 96, 0.8);
@@ -194,7 +270,7 @@ body{
     border-radius: 5px;
 }
 
-.container .title{
+.contact-form .container .title{
     font-size: 25px;
     font-weight: 500;
     position: relative;
@@ -227,22 +303,6 @@ form .input-box span.details{
     font-size: 16px;
     border-bottom-width: 2px;
 }
-
-.title {
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    margin-bottom: 30px;
-}
-
-
-form .category{
-    display: flex;
-    width: 80%;
-    margin: 14px 0;
-    justify-content: space-between;
-}
-
-
 
 form .buttons{
     height: 45px;
