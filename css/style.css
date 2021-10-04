@@ -1,4 +1,4 @@
-/* Importations */
+/* Imports */
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Oswald:wght@300;400;500;700&display=swap');
@@ -13,7 +13,6 @@
 
 body {
     background-color: #cccccc; /* grey light */
-    margin: 20px;
 }
 
 .container {
@@ -95,9 +94,10 @@ ul li {
 }
 
 /* Header */
+
 .header {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 20px;
+    margin-right: 20px;
     box-sizing:border-box;
 }
 
@@ -116,9 +116,12 @@ ul li {
 }
 
 /* Nav */
+
 .nav-menu {
     position: relative;
     margin-bottom: 120px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .nav-menu ul {
@@ -164,6 +167,7 @@ ul li {
 
 
 /* Slider */
+
 .slider-my-slides {display: none}
 
 .slider-slideshow-container {
@@ -351,3 +355,26 @@ form .buttons input:hover{
 }
 
 /* Footer */
+
+.footer {
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing:border-box;
+    background-color: #222222;
+    padding: 10px;
+    color: #ffffff;
+
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+.footer ul li {
+    list-style: none;
+    font-family: 'Nunito Sans', sans-serif;
+    height: 30px;
+}

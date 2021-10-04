@@ -1,7 +1,6 @@
-<h2>Devis & Contact</h2>
-    <div class="container">
-        <div class='container'>
+    <div class='container'>
             <form action="#">
+                <h2>Devis & Contact</h2>
                 <div class="user-details">
 
                     <div class='input-box'>
