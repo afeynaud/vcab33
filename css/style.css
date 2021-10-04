@@ -115,6 +115,15 @@ ul li {
     padding-top: 60px;
 }
 
+.header ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.header ul li a:hover {
+    color: #444444;
+}
+
 /* Nav */
 
 .nav-menu {
@@ -140,6 +149,14 @@ ul li {
     height: 30px;
 }
 
+.nav-menu ul li a {
+    text-decoration: none;
+}
+
+.nav-menu ul li a:hover {
+    color: #444444;
+}
+
 .nav-menu ul li .logo-text {
     list-style: none;
     font-family: 'Nunito Sans', sans-serif;
@@ -163,6 +180,10 @@ ul li {
     background-color: #000000;
     color: #ffffff;
     border-radius: 50%;
+}
+
+nav-menu .logo a {
+    color: #ffffff;
 }
 
 
@@ -377,4 +398,13 @@ form .buttons input:hover{
     list-style: none;
     font-family: 'Nunito Sans', sans-serif;
     height: 30px;
+}
+
+.footer ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: #666666;
 }

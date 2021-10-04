@@ -1,11 +1,11 @@
 <section class='nav-menu'>
     <ul>
-        <li>Réservation et tarifs</li>
-        <li>Devis entreprises</li>
+        <li><a href='/src/pages/reservation-tarifs.php'>Réservation et tarifs</a></li>
+        <li><a href='/src/pages/devis-entreprises.php'>Devis entreprises</a></li>
         <li></li>
-        <li class='logo'><span class='logo-text'>Vcab 33</span></li>
+        <li class='logo'><span class='logo-text'><a href='/'>Vcab 33</a></span></li>
         <li></li>
-        <li>Devenir partenaires</li>
-        <li>Actualités</li>
+        <li><a href='/src/pages/devenir-partenaires.php'>Devenir partenaires</a></li>
+        <li><a href='/src/pages/actualites.php'>Actualités</a></li>
     </ul>
 </section>
