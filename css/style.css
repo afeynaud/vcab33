@@ -77,6 +77,7 @@ ul li {
     flex: 50%;
 }
 
+
 .flex-item-right {
     flex: 50%;
 }
@@ -185,6 +186,37 @@ ul li {
 nav-menu .logo a {
     color: #ffffff;
 }
+.flexReservationsOne {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flexReservationsTwo {
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.flexReservationsThree {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flexReservationsTitle{
+    font-size: 24px;
+}
+
+.flexReservationsParagraph{
+    font-size: 16px;
+}
+
+.reservationsImgOne img{
+    width: 400px;
+    height: 240px;
+
+}
 
 
 /* Slider */
@@ -221,6 +253,7 @@ nav-menu .logo a {
     background-color: rgba(0,0,0,0.8);
 }
 
+
 .slider-text {
     color: #f2f2f2;
     font-size: 15px;
@@ -230,6 +263,113 @@ nav-menu .logo a {
     width: 100%;
     text-align: center;
 }
+
+#slider {
+    margin: 0 auto;
+    width: 800px;
+    max-width: 100%;
+    text-align: center;
+}
+
+#slider input[type=radio]{
+    display: none;
+}
+
+#slides {
+    padding: 10px;
+    border: 3px solid #ccc;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+#overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
+#slide1:checked ~ #slides .inner{
+    margin-left: 0;
+}
+
+#slide2:checked ~ #slides .inner{
+    margin-left: -100%;
+}
+
+#slide3:checked ~ #slides .inner{
+    margin-left: -200%;
+}
+
+#slides .inner{
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 300px;
+}
+
+#slides .slide{
+    width: 25%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff
+}
+
+#slides .slide_1{
+    background: #00171F;
+}
+
+#slides .slide_2{
+    background: #003459;
+}
+
+#slides .slide_3{
+    background: #007EA7;
+}
+
+#controls{
+    margin: -180px 0 0 0;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+}
+
+#controls label{
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 50px;
+    height: 50px;
+}
+
+#controls label:hover{
+    opacity: 1;
+}
+
+#bullets{
+    margin: 150px 0 0;
+    text-align: center;
+}
+
+#bullets label{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #ccc;
+    margin: 0 10px;
+}
+
+
+
+
+/*BodyPresta*/
+
+
+
+
 
 .slider-number-text {
     color: #f2f2f2;
@@ -277,6 +417,8 @@ nav-menu .logo a {
 }
 
 /* ContactForm */
+
+
 
 .contact-form .body{
     display: flex;
