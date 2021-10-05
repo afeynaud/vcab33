@@ -61,6 +61,9 @@
 
 <?php require './templates/form.php' ?>
 <?php require './templates/footer.php' ?>
+
+<script src='navbar.js'></script>
 <script src='./scripts/slider.js'></script>
+
 </body>
 </html> 
