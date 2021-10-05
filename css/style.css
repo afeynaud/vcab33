@@ -44,46 +44,34 @@ h3 {
 }
 
 .flexReservationsOne {
-
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
 
 .flexReservationsTwo {
-
     display:flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-
 }
 
 .flexReservationsThree {
-
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
 
 .flexReservationsTitle{
-
     font-size: 24px;
-
 }
 
 .flexReservationsParagraph{
-
     font-size: 16px;
-
 }
 
 .reservationsImgOne img{
-
     width: 400px;
     height: 240px;
-
 }
 
 /* Header */
@@ -174,7 +162,6 @@ h3 {
     display: none;
     width: 50px;
     height: 50px;
-    opacity: .4;
 }
 
 #controls label:hover{
@@ -198,6 +185,7 @@ h3 {
 
 
 
+/*BodyPresta*/
 
 
 
