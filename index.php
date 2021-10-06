@@ -7,6 +7,7 @@
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Vcab 33 : chauffeurs privés à Bordeaux et en Gironde</title>
+    <meta name='description' content='Vcab33 : chauffeurs privés à Bordeaux et en Gironde pour particuliers, professionnels et entreprises. Tarifs ECO, de groupes et offre VIP.'>
 </head>    
 
 <body>
@@ -62,8 +63,35 @@
 <?php require './templates/form.php' ?>
 <?php require './templates/footer.php' ?>
 
-<script src='navbar.js'></script>
+<script src='./scripts/navbar.js'></script>
 <script src='./scripts/slider.js'></script>
 
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bordeaux, France",
+            "postalCode": "33000",
+            "streetAddress": "Place de la Bourse"
+        },
+        "email": "vcab33@gmail.com",
+        "member": [
+            {
+                "@type": "Organization",
+                "name": "Nicolas Lebrun"
+            }
+        ],
+        "name": "Vcab 33",
+        "telephone": "( 33 6) 04 52 62 01",
+        "contactPoint" : [
+            { "@type" : "ContactPoint",
+                "telephone" : "( 33 6) 04 52 62 01",
+                "contactType" : "Service clients et entreprises"
+            }
+        ]
+    }
+</script>
 </body>
 </html> 
