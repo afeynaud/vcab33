@@ -15,11 +15,24 @@ body {
     background-color: #cccccc; /* grey light */
 }
 
+.red-border{
+    border: red 1px solid;
+}
+
+.green-border{
+    border: green 1px solid;
+}
+
+.blue-border{
+    border: blue 1px solid;
+}
+
 .container {
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -27,24 +40,26 @@ body {
 }
 
 p {
-    font-size: 16px;
+    font-size: 24px;
     font-family: 'Nunito Sans', sans-serif;
+    margin-bottom: 20px;
 }
 
 h1 {
-    font-size: 42px;
+    font-size: 48px;
 	text-align: center;
     font-family: 'Oswald', sans-serif;
     margin-bottom: 50px;
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 42px;
     font-family: 'Oswald', sans-serif;
+    margin-bottom: 10px;
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 36px;
     font-family: 'Oswald', sans-serif;
 }
 
@@ -52,7 +67,11 @@ ul li {
     font-family: 'Nunito Sans', sans-serif;
 }
 
-.button {
+.add-margin-left{
+    margin-left: 40px;
+}
+
+button {
     background-color: #333333;
     border: none;
     color: white;
@@ -63,37 +82,20 @@ ul li {
     font-size: 16px;
 }
 
-.buttonReservations {
-    background-color: rgba(209, 29, 29, 0.2);
-    border: none;
-    color: rgb(255, 0, 0);
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-.flex-item-left {
-    flex: 50%;
-}
-
-
-.flex-item-right {
-    flex: 50%;
-}
-
-.reservationsImgOne img{
-    width: 400px;
-    height: 240px;
+@media (max-width: 600px) {
+    .container {
+      
+      flex-direction: column;
+    }
 }
 .offres {
     text-align: center;
 }
 
-@media (max-width: 800px) {
-    .container .flex-item-right, .flex-item-left {
-        flex: 100%;
-        flex-direction: column;
+@media (max-width: 600px) {
+    .container-reversed {
+      flex-direction: column-reverse;
+      
     }
 }
 
@@ -398,6 +400,54 @@ ul li {
 
 /*BodyPresta*/
 
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around
+  }
+  .card {
+    flex: 0 0 500px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    background-color: rgba(0, 0, 0, 0.8);
+  } 
+  .card img {
+    width: 500px;
+    height: 500px;
+  }
+
+  .card .text {
+    padding: 0 20px 20px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #fff;
+  }
+  .card .text > button {
+    background: gray;
+    border: 0;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    }
+
+    img {
+      width: 5;
+      height: 50px;
+    }
+
+    i {
+      width: 500px;
+    }
+    
+
+    @media (max-width: 800px){
+        .cards .card{
+            flex-direction: column;
+        }
+    }
 
 
 
@@ -447,7 +497,52 @@ ul li {
     .slider-prev, .slider-next,.slider-text {font-size: 11px}
 }
 
-/* ContactForm */
+
+
+
+/*ContactForm1*/
+
+.myForm > * {
+	font: 1.4em 'Unkempt', sans-serif; 
+   }
+   .myForm {
+	 display: grid;
+	 grid-template-columns: [labels] auto [controls] 1fr;
+	 grid-auto-flow: row;
+	 grid-gap: .8em .5em;
+	 background: rgb(200, 202, 186);
+	 padding: 1.2em;
+	 width: 36em;
+   }
+   .myForm > label,
+   .myForm > fieldset  {
+	 grid-column: labels;
+	 grid-row: auto;
+   }
+   .myForm > input, 
+   .myForm > select,
+   .myForm > textarea {
+	 grid-column: controls;
+	 grid-row: auto;
+	 padding: .4em;
+	 border: 0;
+   }
+   .myForm > fieldset,
+   .myForm > button {
+	 grid-column: span 2;
+   }  
+   .myForm > button {
+	 padding: 1em;
+	 background: rgb(51, 50, 50);
+	 border: 0;
+	 color: white;
+	 }
+   .myForm > textarea {
+	 min-height: 3em;
+	 }
+
+
+/* ContactForm2 */
 
 
 
@@ -547,6 +642,7 @@ form .buttons input:hover{
     }
    
 }
+
 
 /* Footer */
 
