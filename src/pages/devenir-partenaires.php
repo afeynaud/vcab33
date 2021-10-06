@@ -15,7 +15,15 @@
 <?php require '../../templates/nav-menu.php' ?>
 
 <h1>Devenir partenaires</h1>
-
+<div class="offres">
+<h2>Nos offres d'emploi</h2>
+<ul>
+    <li>Chauffeur V.I.P (Uniquement sur dossier) (C.D.I).</li>
+    <li>Chauffeur polyvalent (Uniquement trajet éco et Van) (C.D.D).</li>
+    <li>Employé de maintenance des véhicules (C.D.I)</li>
+    <li>Assitant(e) R.H (C.D.I)</li>
+</ul>
+</div>
 <?php require '../../templates/form.php' ?>
 <?php require '../../templates/footer.php' ?>
 

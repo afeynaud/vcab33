@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang='fr'>
+<html lang='fr' xmlns="http://www.w3.org/1999/html">
 
 <head>
     <link rel='stylesheet' href='../../css/style.css'>
@@ -15,6 +15,7 @@
 <?php require '../../templates/nav-menu.php' ?>
 
 <h1>Actualités</h1>
+
 
 <?php require '../../templates/footer.php' ?>
 
