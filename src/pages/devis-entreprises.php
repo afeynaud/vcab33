@@ -18,7 +18,7 @@
 
 <h1>Devis entreprises</h1>
 
-<div class = 'add-margin-left'>
+<div class = 'container'>
 
     <h2>Des services adaptés à vos salariés</h2>
 
@@ -35,7 +35,47 @@
 
 </div>
 
-<?php require '../../templates/form.php' ?>
+<section>
+            <div class='container'>
+                <div class='flex-item-left'>
+                    <h2>Confort et sécurité</h2>
+                    <p>Nos chauffeurs et véhicules sont agrémentés</br> et inscrits au registre des VTC.</br>
+                    Nous veillons à la qualité du transport.</br></p>
+                </div>
+
+                <div class='flex-item-right'>
+                    <div class='img-margin-left'>
+                        <img src='https://i.imgur.com/dOiiN6T.jpg' alt='chauffeur-prive-berline'>
+                    </div>
+                </div>
+            </div>
+
+        <div class='container container-reversed'>
+            <div class='flex-item-left'>
+                <div class='s'>
+                    <img src='https://i.imgur.com/4THIQbQ.jpg' alt='chauffeur-prive-berline'>
+                </div>
+            </div>
+
+            <div class='flex-item-right'>
+                <h2>Adaptabilité et fiabilité</h2>
+                <p>Vous organisez un séminaire ou avez besoin</br>
+                de vous rendre à un rendez-vous ?</br>
+                Nous nous adaptons à vos besoins.</br></p>
+            </div>
+        </div>
+
+    </section>
+
+<div class = 'container'>
+    <h2>Nos gammes de transport</h2>
+    <p>Nous proposons aux entreprises des véhicules adaptés à chaque situation.</br>
+    Bien sûr, nous pouons nous adapter selon vos demandes au-delà de notre gamme habituelle.</p>
+</div>
+
+<div class='container'>
+    <?php require '../../templates/form.php' ?>
+</div>
 <?php require '../../templates/footer.php' ?>
 
 </body>
