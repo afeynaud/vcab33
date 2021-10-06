@@ -15,11 +15,24 @@ body {
     background-color: #cccccc; /* grey light */
 }
 
+.red-border{
+    border: red 1px solid;
+}
+
+.green-border{
+    border: green 1px solid;
+}
+
+.blue-border{
+    border: blue 1px solid;
+}
+
 .container {
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -27,24 +40,26 @@ body {
 }
 
 p {
-    font-size: 16px;
+    font-size: 24px;
     font-family: 'Nunito Sans', sans-serif;
+    margin-bottom: 20px;
 }
 
 h1 {
-    font-size: 42px;
+    font-size: 48px;
 	text-align: center;
     font-family: 'Oswald', sans-serif;
     margin-bottom: 50px;
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 42px;
     font-family: 'Oswald', sans-serif;
+    margin-bottom: 10px;
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 36px;
     font-family: 'Oswald', sans-serif;
 }
 
@@ -52,7 +67,11 @@ ul li {
     font-family: 'Nunito Sans', sans-serif;
 }
 
-.button {
+.add-margin-left{
+    margin-left: 40px;
+}
+
+button {
     background-color: #333333;
     border: none;
     color: white;
@@ -60,36 +79,20 @@ ul li {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 24px;
 }
 
-.buttonReservations {
-    background-color: rgba(209, 29, 29, 0.2);
-    border: none;
-    color: rgb(255, 0, 0);
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-.flex-item-left {
-    flex: 50%;
+@media (max-width: 600px) {
+    .container {
+      
+      flex-direction: column;
+    }
 }
 
-.flex-item-right {
-    flex: 50%;
-}
-
-.reservationsImgOne img{
-    width: 400px;
-    height: 240px;
-}
-
-@media (max-width: 800px) {
-    .container .flex-item-right, .flex-item-left {
-        flex: 100%;
-        flex-direction: column;
+@media (max-width: 600px) {
+    .container-reversed {
+      flex-direction: column-reverse;
+      
     }
 }
 
