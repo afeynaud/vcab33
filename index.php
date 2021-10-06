@@ -24,22 +24,22 @@
                 </div>
 
                 <div class='flex-item-right'>
-                    <div class='reservationsImgOne'>
-                        <img src='https://i.imgur.com/Id1FodU.jpg' alt='chauffeur-prive-berline'>
+                    <div class='img-margin-left'>
+                        <img src='https://i.imgur.com/YqCIVCh.jpg' alt='chauffeur-prive-berline'>
                     </div>
                 </div>
             </div>
 
-        <div class='container'>
+        <div class='container container-reversed'>
             <div class='flex-item-left'>
-                <div class='reservationsImgOne'>
-                    <img src='https://i.imgur.com/Id1FodU.jpg' alt='chauffeur-prive-berline'>
+                <div class='s'>
+                    <img src='https://i.imgur.com/4THIQbQ.jpg' alt='chauffeur-prive-berline'>
                 </div>
             </div>
 
             <div class='flex-item-right'>
                 <h2>Devis entreprises</h2>
-                <p>Vous êtes une entreprise et avez besoin de services particuliers.</p>
+                <p>Vous êtes une entreprise et avez besoin</br>de services particuliers.</p>
                 <button>Réserver et voir le détail des tarifs</button>
             </div>
         </div>
@@ -47,13 +47,13 @@
         <div class='container'>
             <div class='flex-item-left'>
                 <h2>Devenez partenaires</h2>
-                <p>Vous souhaitez donner un nouvel élan à votre carrière professionnelle et intégrer nos équipes.</p>
+                <p>Vous souhaitez donner un nouvel élan à votre carrière</br> professionnelle et intégrer nos équipes.</p>
                 <button>Réserver et voir le détail des tarifs</button>
             </div>
 
             <div class='flex-item-right'>
-                <div class='reservationsImgOne'>
-                    <img src='https://i.imgur.com/Id1FodU.jpg' alt='chauffeur-prive-berline'>
+                <div class=''>
+                    <img src='https://i.imgur.com/7Q23Twb.jpg' alt='chauffeur-prive-berline'>
                 </div>
             </div>
         </div>
@@ -61,6 +61,9 @@
 
 <?php require './templates/form.php' ?>
 <?php require './templates/footer.php' ?>
+
+<script src='navbar.js'></script>
 <script src='./scripts/slider.js'></script>
+
 </body>
 </html> 
