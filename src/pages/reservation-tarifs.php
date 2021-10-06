@@ -11,8 +11,12 @@
 
 <body>
 
-<?php require '../../templates/header.php' ?>
-<?php require '../../templates/nav-menu.php' ?>
+<?php
+    require '../../templates/header.php';
+    require '../../templates/nav-menu.php';
+    require '../../data/runs-global-informations.php';
+?>
+<?php/* var_dump($runsPrestationsDetails);die */?>
 
 <h1>Réservation et tarifs</h1>
 <h2>Nos gammes de transport</h2>
@@ -52,8 +56,18 @@
         </div>
       </main>
 
-<?php require '../../templates/form.php' ?>
-<?php require '../../templates/footer.php' ?>
+<h2>Nos gammes de transports</h2>
+
+<h3>Prestations incluses</h3>
+
+<h3>Prestations supplémentaires</h3>
+
+<h2>Exemples de trajets</h2>
+
+<?php
+    require '../../templates/form.php';
+    require '../../templates/footer.php';
+?>
 
 </body>
 </html>
