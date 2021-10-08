@@ -42,10 +42,74 @@
           </div>
         </article>
       </main>
+<section>
+    <h2 class='container'>Exemples de tarifs</h2>
+    <div class='container-table'>
+        <table id='prices-table'>
+            <tr>
+                <th>Départ</th>
+                <th>Arrivée</th>
+                <th>Temps</th>
+                <th>Distance</th>
+                <th>Gamme</th>
+                <th>Tarif 1 personne</th>
+            </tr>
+            <tr>
+                <td>Bordeaux Gare Saint-Jean</td>
+                <td>Hippodrome de Bordeaux Le Bouscat</td>
+                <td>30 min</td>
+                <td>17,2 km</td>
+                <td>Gamme ECO</td>
+                <td>20 €</td>
+            </tr>
+            <tr>
+                <td>Bordeaux Place de la Bourse</td>
+                <td>Aéroport de Bordeaux Mérignac</td>
+                <td>27 min</td>
+                <td>23,8 km</td>
+                <td>Gamme VAN</td>
+                <td>30 €</td>
+            </tr>
+            <tr>
+                <td>Bordeaux - Hôtel de Ville - Place Pey Berland</td>
+                <td>Bordeaux Lac - Parc des Expositions</td>
+                <td>30 min</td>
+                <td>17,2 km</td>
+                <td>Gamme ECO</td>
+                <td>20 €</td>
+            </tr>
+            <tr>
+                <td>Bordeaux Cité du Vin</td>
+                <td>Château Margaux - Margaux-Cantenac</td>
+                <td>35 min</td>
+                <td>26,6 km</td>
+                <td>Gamme VAN</td>
+                <td>35 €</td>
+            </tr>
+            <tr>
+                <td>Yvrac</td>
+                <td>Bassin d'Arcachon</td>
+                <td>1h15</td>
+                <td>79,9 km</td>
+                <td>Gamme VIP</td>
+                <td>65 €</td>
+            </tr>
+        </table>
+    </div>
+</section>
 
-<div class="container-form1">
-    <?php require '../../templates/form.php';?>
-</div>
+<section>
+    <div class='container-size'>
+        <h2>Contact</h2>
+        <p>Quelques soient vos besoins, nous sommes à votre disposition pour répondre à toutes vos questions et trouver ensemble des solutions à vos problématiques.</p>
+        <p>Tel : +33 6 04 52 62 01</p>
+        <p>Mail : vab33@gmail.com</p>
+    </div>
+
+    <div class='container-form1'>
+        <?php require '../../templates/form.php' ?>
+    </div>
+</section>
 <?php require '../../templates/footer.php';?>
 
 </body>

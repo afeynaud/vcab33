@@ -57,6 +57,17 @@ body {
     max-width: 600px;
 }
 
+.container-table {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+}
+
 .proper-font {
 
     font-size: 24px;
@@ -117,6 +128,7 @@ button:hover {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    cursor: pointer;
 }
 
 @media (max-width: 600px) {
@@ -374,6 +386,29 @@ button:hover {
 }
 
 /*BodyPresta*/
+
+#prices-table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#prices-table td, #prices-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#prices-table tr:nth-child(even){background-color: #f2f2f2;}
+
+#prices-table tr:hover {background-color: #ddd;}
+
+#prices-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #000000;
+    color: white;
+}
 
 .articles-card {
     width: 360px;

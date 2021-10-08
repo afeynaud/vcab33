@@ -83,8 +83,9 @@
     <li>Employé de maintenance des véhicules (C.D.I)</li>
     <li>Assitant(e) R.H (C.D.I)</li>
 </ul>
-</div>
+    <div class='container-form1'>
 <?php require '../../templates/form.php' ?>
+    </div>
 <?php require '../../templates/footer.php' ?>
 
 </body>

@@ -21,7 +21,7 @@
                 <div class='flex-item-left'>
                     <h2>Réservations et tarifs</h2>
                     <p>Nos chauffeurs sont à votre disposition à partir de 20 €.</p>
-                    <button>Réserver et voir le détail des tarifs</button>
+                    <a href='/src/pages/reservation-tarifs.php'><button>Réserver et voir le détail des tarifs</button></a>
                 </div>
 
                 <div class='flex-item-right'>
@@ -41,7 +41,7 @@
             <div class='flex-item-right'>
                 <h2>Devis entreprises</h2>
                 <p>Vous êtes une entreprise et avez besoin</br>de services particuliers.</p>
-                <button>Réserver et voir le détail des tarifs</button>
+                <a href='/src/pages/devis-entreprises.php'><button>Demander un devis</button></a>
             </div>
         </div>
 
@@ -49,7 +49,7 @@
             <div class='flex-item-left'>
                 <h2>Devenez partenaires</h2>
                 <p>Vous souhaitez donner un nouvel élan à votre carrière</br> professionnelle et intégrer nos équipes.</p>
-                <button>Réserver et voir le détail des tarifs</button>
+                <a href='/src/pages/devenir-partenaires.php'><button>Rejoignez-nous</button></a>
             </div>
 
             <div class='flex-item-right'>

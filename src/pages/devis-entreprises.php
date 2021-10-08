@@ -73,7 +73,7 @@
     Bien sûr, nous pouons nous adapter selon vos demandes au-delà de notre gamme habituelle.</p>
 </div>
 
-<div class='container'>
+<div class='container-form1'>
     <?php require '../../templates/form.php' ?>
 </div>
 <?php require '../../templates/footer.php' ?>
