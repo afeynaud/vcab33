@@ -57,6 +57,14 @@ body {
     max-width: 600px;
 }
 
+.proper-font {
+
+    font-size: 24px;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-bottom: 20px;
+
+}
+
 p {
     font-size: 24px;
     font-family: 'Nunito Sans', sans-serif;
@@ -432,7 +440,7 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
-    justify-content: space-around
+    justify-content: space-around;
   }
   .card {
     width: 360px;
@@ -461,6 +469,7 @@ button:hover {
     }
 
     .card-icons-blocks {
+      text-align: center;
       width: 360px;
     }
 
