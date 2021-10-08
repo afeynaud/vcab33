@@ -4,6 +4,7 @@
 
 <head>
     <link rel='stylesheet' href='../../css/style.css'>
+    <link rel="icon" type="image/png" href="../../src/img/favicon.png" />
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Devis entreprises - Vcab 33 chauffeurs privés</title>
@@ -22,13 +23,13 @@
 
     <h2>Des services adaptés à vos salariés</h2>
 
-    <p>Avec toutes les restrictions de déplacement et selon votre localisation et vos moyens, 
+    <p>Avec toutes les restrictions de déplacement et selon votre localisation et vos moyens,
     il peut être délicat de se déplacer dans les grandes métropoles et agglomérations.</p>
 
     <p>Chaque semaine, la plupart de vos salariés perdent des dizaines d’heures à venir travailler et repartir chez-eux.
     Ils rentrent tard et passent le peu de temps qu’il leur reste à s’occuper de leur famille. Une charge mentale se créé jour après jour.
     Cela peut avoir une incidence sur leur moral et leur productivité.</p>
-    
+
     <p>Ne laissez rien au hasard des aléas de la vie,
     proposez dans vos avantages à vos salariés une offre de transport sûre et fiable au quotidien afin que vous puissiez tous,
     membres d’une même équipe, vous concentrer sur ce qui compte vraiment : la qualité de vos offres et le service rendu à vos clients.</p>
@@ -73,9 +74,18 @@
     Bien sûr, nous pouons nous adapter selon vos demandes au-delà de notre gamme habituelle.</p>
 </div>
 
-<div class='container-form1'>
-    <?php require '../../templates/form.php' ?>
-</div>
+<section>
+    <div class='container-size'>
+        <h2>Contact</h2>
+        <p>Nos équipes sont à votre disposition pour déterminer ensemble les meilleures conditions en fonction des besoins de vos salariés et de votre budget.</p>
+        <p>Tel : +33 6 04 52 62 01</p>
+        <p>Mail : vab33@gmail.com</p>
+    </div>
+
+    <div class='container-form1'>
+        <?php require '../../templates/form.php' ?>
+    </div>
+</section>
 <?php require '../../templates/footer.php' ?>
 
 </body>
